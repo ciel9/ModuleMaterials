@@ -1,0 +1,14 @@
+<odoo>
+    <template id="supplier_list_template">
+        <t t-call="web.layout">
+            <div class="container mt16">
+                <h1>Supplier List</h1>
+                <ul>
+                    <t t-foreach="suppliers" t-as="supplier">
+                        <li><t t-esc="supplier.supplier"/></li>
+                    </t>
+                </ul>
+            </div>
+        </t>
+    </template>
+</odoo>
